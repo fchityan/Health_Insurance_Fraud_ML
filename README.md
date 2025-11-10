@@ -1,4 +1,4 @@
-# Health-Insurance-Fraud-ML
+# Health_Insurance_Fraud_ML
 
 # Know the context
 You are a data scientist in a major health insurance provider in the US. They are looking to build a claims fraud detection model in a bid to make claims processing faster, more accurate, and automated.
