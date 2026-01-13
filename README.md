@@ -1,26 +1,103 @@
-# Health_Insurance_Fraud_ML
+🏥 Health Insurance Claims Fraud Analysis (Statistical Approach)
 
-# Know the context
-You are a data scientist in a major health insurance provider in the US. They are looking to build a claims fraud detection model in a bid to make claims processing faster, more accurate, and automated.
+📌 Background
 
-# Business problem
-Existing manual methods of reviewing claims for fraud is tedious, unscalable, and lacks accuracy
-Rule-based fraud detection methods are rigid and less readily adaptable to drifts in fraud patterns
-Project objectives and description
-Explore the implementation of several common statistical tests (using scipy.stats) as part of the insurer's preliminary investigation into reports of potential fraudulent healthcare claims.
+U.S. health insurance providers process millions of medical claims every year, making fraud detection a mission-critical function. Undetected fraudulent activity leads to:
 
-# Part 1 - Individual Provider
-There have been rumours that a specific provider with the ID "bb49afa2-3d8a-306c-a06e-a1715dd71af8" is overbilling treatments for patients, resulting in allegedly excessive claim costs. In particular, the provider has been accused of having an average total claim cost that is significantly higher than other providers of the same specialty i.e., General Practice.
-Our task is to identify the provider based on his/her details, and verify whether this accusation is true.
+	•	💸 Higher claim payouts and medical loss ratios
+	•	⏱️ Slower claims adjudication and member dissatisfaction
+	•	⚠️ Increased regulatory and compliance risk
 
-# Part 2 - Two organizations
-There are two organizations with similar profiles (types of patients seen, location etc.) for which we want to test whether the total claim costs between them are indeed similar as well. The IDs of the two organizations are "226098a2-6a40-3588-b5bb-db56c3a30a04" and "108ccece-277a-396f-8bf2-1527f74458eb"
+Traditional fraud detection approaches—such as manual audits and static rule-based systems—are increasingly resource-intensive, slow, and difficult to scale.
 
-# Part 3 - More than two organizations
-The insurer is now keen to review the average total claim costs of PCPs (private clinical practices) within a particular set of cities, and to see if one or more of them has a significantly different (higher or lower) average dollar cost from the rest. The set of cities include AVON and WATERTOWN.
 
-# Part 4 - Proportions across two providers
-To account for differences in total claim costs across two doctors (i.e., providers), the insurer is looking to test if there is any significant differences in the proportion of encounter classes (e.g., outpatient, inpatient etc.) that they each have to handle.
-The providers to be evaluated are as follows:
-ID of Provider 1: b0c5743a-4f9a-33b3-bab4-6a474fcf9ffd
-ID of Provider 2: fc897c25-b2ee-30c5-a945-d0eb13a1f96e
+🎯 Purpose of This Analysis
+
+This project demonstrates how statistical hypothesis testing can support early fraud signal detection within a healthcare claims processing workflow. All analyses are implemented using Python and standard statistical libraries to reflect real-world insurer analytics environments.
+
+Rather than replacing existing systems, these tests act as:
+
+	•	🔍 Automated screening mechanisms
+	•	🚨 Risk flags for deeper investigation
+	•	🤖 Inputs for future machine learning models
+
+
+🧪 Analytical Scope
+
+The analysis explores claim cost and encounter-level behavior across healthcare providers and organizations, focusing on:
+
+	•	Detecting unusually high average claim costs
+	•	Comparing claim cost distributions across similar entities
+	•	Evaluating whether cost differences are statistically meaningful
+
+
+🔍 Part 1: Individual Provider Cost Anomaly
+
+
+🧾 Scenario
+
+Internal monitoring has raised concerns that a healthcare provider may be billing at a higher-than-expected rate relative to peers within the same specialty. 
+This analysis helps distinguish between legitimate practice variation and potential overbilling behavior.
+
+🧠 Objective
+
+	•	Compare the provider’s average total claim cost against similar providers
+	•	Determine whether observed differences are statistically significant
+	•	Assess whether the provider should be flagged for additional review
+
+🏢 Part 2: Claim Cost Comparison Between Organizations
+
+
+🧾 Scenario
+
+Two healthcare organizations with comparable characteristics are expected to exhibit similar total claim cost patterns. 
+This step supports fairness, consistency, and early identification of cost anomalies.
+
+🧠 Objective:
+
+	•	Test whether differences in total claim costs are statistically significant
+	•	Identify whether cost disparities fall outside normal variation
+
+🏥 Part 3: Comparative Review Across Multiple Practices
+
+
+🧾 Scenario
+
+The insurer evaluates a group of private clinical practices to ensure consistent and reasonable claim cost behavior across similar entities. 
+This approach helps insurers prioritize investigative resources efficiently.
+
+🧠 Objective:
+
+	•	Compare average claim costs across multiple practices simultaneously
+	•	Identify outliers with significantly higher or lower costs
+	•	Highlight entities that may require targeted review
+
+
+📊 Part 4: Encounter-Type Proportion Analysis
+
+
+🧾 Scenario
+
+Differences in claim costs are not always fraudulent and may be driven by the mix of encounter types handled by providers (e.g., inpatient vs outpatient). This analysis reduces false positives by separating structural differences from abnormal billing patterns.
+
+🧠 Objective:
+
+	•	Compare the distribution of encounter classes across providers
+	•	Determine whether differences in service mix explain observed cost variation
+
+
+🧰 Tools & Methods:
+
+	•	🐍 Python
+	•	📦 pandas, numpy
+	•	📐 scipy.stats
+	•	Independent t-tests
+	•	ANOVA
+	•	Chi-square tests
+
+✅ Value to U.S. Health Insurance Providers:
+
+	•	🚨 Enables early identification of potential fraud
+	•	📉 Reduces manual review workload
+	•	⚖️ Supports explainable, audit-friendly decisions
+	•	🤖 Provides a foundation for scalable ML fraud detection
