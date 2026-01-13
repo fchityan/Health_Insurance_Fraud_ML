@@ -1,4 +1,4 @@
-🏥 Health Insurance Claims Fraud Analysis (Statistical Approach)
+🏥 Health Insurance Claims Fraud Analysis
 
 📌 Background
 
