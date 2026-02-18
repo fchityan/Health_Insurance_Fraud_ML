@@ -1,4 +1,4 @@
-🏥 Health Insurance Claims Fraud Analysis
+🏥 Health Insurance Fraud Risk Assessment
 
 📌 Background
 
@@ -31,7 +31,7 @@ The analysis explores claim cost and encounter-level behavior across healthcare 
 	•	Evaluating whether cost differences are statistically meaningful
 
 
-🔍 Part 1: Individual Provider Cost Anomaly
+🔍 Claim Cost Deviation Analysis
 
 
 🧾 Scenario
@@ -45,7 +45,7 @@ This analysis helps distinguish between legitimate practice variation and potent
 	•	Determine whether observed differences are statistically significant
 	•	Assess whether the provider should be flagged for additional review
 
-🏢 Part 2: Claim Cost Comparison Between Organizations
+🏢 Claim Cost Comparison Between Organizations
 
 
 🧾 Scenario
@@ -58,7 +58,7 @@ This step supports fairness, consistency, and early identification of cost anoma
 	•	Test whether differences in total claim costs are statistically significant
 	•	Identify whether cost disparities fall outside normal variation
 
-🏥 Part 3: Comparative Review Across Multiple Practices
+🏥 Multi-Organization Claim Cost Analysis
 
 
 🧾 Scenario
@@ -73,7 +73,7 @@ This approach helps insurers prioritize investigative resources efficiently.
 	•	Highlight entities that may require targeted review
 
 
-📊 Part 4: Encounter-Type Proportion Analysis
+📊 Provider Encounter Mix Comparison
 
 
 🧾 Scenario
